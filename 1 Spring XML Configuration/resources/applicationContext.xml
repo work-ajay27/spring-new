@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- kontya class cha object create karaycha ahe -->
+    
+<bean class="com.tka.Student" id="studId">  <!-- this line will create an object -->
+	<property name="studId" value="1"></property> 
+	<property name="studName" value="Ajay"></property>
+	<property name="studEmail" value="ajay@gmail.com"></property>
+	
+</bean>
+
+</beans>
