@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Student Bean -->
+<bean class="com.tka.bean.Student" id="Stud" autowire="byName"> <!-- Automatic Dependency Injection-->
+<property name="studId" value="101"></property>
+<property name="studName" value="AJAY"></property>
+<!-- 
+<property name="address" ref="ADDRESS"></property> -->
+
+</bean>
+
+
+   <!-- Address Bean -->
+   <bean class="com.tka.bean.Address" id="address">
+   <property name="houseNo" value="58"></property>
+   <property name="houseName" value="Villa"></property>
+   <property name="village" value="Nandurbar"></property>
+   </bean>
+
+
+</beans>
