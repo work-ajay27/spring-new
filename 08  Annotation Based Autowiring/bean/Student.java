@@ -1,9 +1,13 @@
 package com.tka.bean;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+//1. Annotation Based Autowiring
 public class Student {
 	private int studId;
 	private String studName;
-	private Address Address;
+	@Autowired
+	private Address address;
 
 	public int getStudId() {
 		return studId;
@@ -22,19 +26,17 @@ public class Student {
 	}
 
 	public Address getAddress() {
-		return Address;
+		return address;
 	}
 
 	public void setAddress(Address address) {
-		Address = address;
+		this.address = address;
 	}
 
 	public void display() {
-		System.out.println("ID" + studId);
-		System.out.println("Name" + studName);
-		System.out.println("Address" + Address);
-//		System.out.println("ID" + studId);
-		
-	}
 
+		System.out.println(studId);
+		System.out.println(studName);
+		System.out.println(address);
+	}
 }
